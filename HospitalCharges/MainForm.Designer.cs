@@ -150,6 +150,7 @@
 			this.calculateButton.TabIndex = 10;
 			this.calculateButton.Text = "Calculate";
 			this.calculateButton.UseVisualStyleBackColor = true;
+			this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
 			// 
 			// totalLabel
 			// 
@@ -203,6 +204,7 @@
 			// 
 			// MainForm
 			// 
+			this.AcceptButton = this.calculateButton;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(984, 461);
