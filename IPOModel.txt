@@ -1,0 +1,25 @@
+Input:
+Number of days
+Medication charges
+Surgical charges
+Lab charges
+Rehabilitation charges
+Time
+Date
+File name and location
+
+Processing:
+Calculate charge of stay
+Calculate misc charges
+Calculate total cost
+
+Output:
+Number of days
+Medication charges
+Surgical charges
+Lab charges
+Rehabilitation charges
+Time
+Date
+File name and location
+Display Total cost

@@ -1,0 +1,14 @@
+Calculate
+1. Declare variables and set inputs to variables
+2. Calculate cost of stay = 350*days
+3. Calculate misc costs = medication + surgical + lab + rehabilitation
+4. Calculate total cost = misc + stay
+5. Display total cost
+
+Reset form
+1. reset textBoxes and labels
+
+Save
+1. Display SaveFileDialog
+2. Get inputs for location and name of file to save to
+3. Write time, date, and total cost to file
