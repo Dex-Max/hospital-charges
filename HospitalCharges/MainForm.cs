@@ -56,7 +56,14 @@ namespace HospitalCharges
 
 		private void resetButton_Click(object sender, EventArgs e)
 		{//reset textBoxes
-
+			daysTextBox.Text = "";
+			medTextBox.Text = "";
+			surgicalTextBox.Text = "";
+			labTextBox.Text = "";
+			rehabTextBox.Text = "";
+			timeTextBox.Text = "";
+			dateTextBox.Text = "";
+			totalLabel.Text = "Total: ";
 		}//end resetButton
 
 		private void saveButton_Click(object sender, EventArgs e)
