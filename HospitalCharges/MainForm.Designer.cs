@@ -45,6 +45,8 @@
 			this.timeTextBox = new System.Windows.Forms.TextBox();
 			this.dateTextBox = new System.Windows.Forms.TextBox();
 			this.saveButton = new System.Windows.Forms.Button();
+			this.resetButton = new System.Windows.Forms.Button();
+			this.saveDialog = new System.Windows.Forms.SaveFileDialog();
 			this.SuspendLayout();
 			// 
 			// daysLabel
@@ -144,7 +146,7 @@
 			// 
 			// calculateButton
 			// 
-			this.calculateButton.Location = new System.Drawing.Point(699, 89);
+			this.calculateButton.Location = new System.Drawing.Point(699, 64);
 			this.calculateButton.Name = "calculateButton";
 			this.calculateButton.Size = new System.Drawing.Size(84, 42);
 			this.calculateButton.TabIndex = 10;
@@ -201,6 +203,17 @@
 			this.saveButton.TabIndex = 16;
 			this.saveButton.Text = "Save";
 			this.saveButton.UseVisualStyleBackColor = true;
+			this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+			// 
+			// resetButton
+			// 
+			this.resetButton.Location = new System.Drawing.Point(699, 126);
+			this.resetButton.Name = "resetButton";
+			this.resetButton.Size = new System.Drawing.Size(84, 37);
+			this.resetButton.TabIndex = 17;
+			this.resetButton.Text = "Reset";
+			this.resetButton.UseVisualStyleBackColor = true;
+			this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
 			// 
 			// MainForm
 			// 
@@ -208,6 +221,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(984, 461);
+			this.Controls.Add(this.resetButton);
 			this.Controls.Add(this.saveButton);
 			this.Controls.Add(this.dateTextBox);
 			this.Controls.Add(this.timeTextBox);
@@ -253,6 +267,8 @@
 		private System.Windows.Forms.TextBox timeTextBox;
 		private System.Windows.Forms.TextBox dateTextBox;
 		private System.Windows.Forms.Button saveButton;
+		private System.Windows.Forms.Button resetButton;
+		private System.Windows.Forms.SaveFileDialog saveDialog;
 	}
 }
 
